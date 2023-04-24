@@ -44,20 +44,12 @@
     <div class="header-bottom">
       <!-- mobile toggler button -->
       <div class="container">
-        <button class="navbar-toggler" type="button" <span class="navbar-toggler-icon"><i
+        <button class="navbar-toggler" type="button" <span class="navbar-toggler-icon" onclick="myFunction"><i
             class="fa-solid fa-bars"></i></span>
         </button>
 
-        <!-- social icons -->
-        <div class="social-icons">
-          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
-        </div>
-
         <!-- navigation -->
-        <nav class="mainNav">
+        <nav class="mainNav" id="mainNavigation">
 
           <a href="" class="active">Home</a>
           <a href="">About Us</a>
@@ -82,6 +74,14 @@
 
         </nav>
         <!-- navigation END -->
+
+        <!-- social icons -->
+        <div class="social-icons">
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
       </div>
       <!-- container END -->
     </div>
@@ -101,29 +101,41 @@
           <!-- left side column -->
           <div class="hero-content">
             <h1>Welcome to<br>Restaurant</h1>
-            <p>The people, food and the prime locations make the perfect place good friends & family to come together and have great
-            time.</p>
+            <p>The people, food and the prime locations make the perfect place good friends & family to come together
+              and have great
+              time.</p>
             <a href="/" class="btn btn-gold">View Menu</a>
           </div>
-          
+
           <!-- right side column -->
           <div class="hero-img">
-          <img src="images/hero-small.jpeg" alt="Table in restaurant by the window">
+            <img src="images/hero-small.jpeg" alt="Table in restaurant by the window">
           </div>
         </div>
-        </div>
+      </div>
 
 
     </section>
     <!-- section hero END -->
-   
+
   </main>
   <!-- main content END -->
 
 
 
   <!-- script -->
-  <script src="js/main.js"></script>
+  <script>
+    
+      function myFunction () {
+        let myNav = document.getElementById("mainNavigation");
+        console.log("super");
+        if (myNav.style.display === "none") {
+          myNav.style.display = "block";
+        } else {
+          myNav.style.display = "none";
+        }
+      }
+  </script>
 </body>
 
 </html>
