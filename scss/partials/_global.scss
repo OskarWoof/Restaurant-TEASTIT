@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $body-ff;
+  font-size: 1.6rem;
+  color: $text-clr;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-ff;
+}
+
+h1 {
+  font-size: calc(4rem + ((1vw - 0.32rem) * 3.75));
+  min-height: 0vw;
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+
+  @media (min-width: 1920px) {
+    font-size: 10rem;
+  }
+}
+
+p {
+  font-size: calc(1.8rem + ((1vw - 0.32rem) * 0.125));
+  min-height: 0vw;
+
+  @media (min-width: 1920px) {
+    font-size: 2rem;
+  }
+}
+
+// Layot parts
+.container {
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media screen and (min-width: 479px) {
+    padding-inline: 3rem;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1400px;
+    padding-inline: 4rem;
+  }
+}
