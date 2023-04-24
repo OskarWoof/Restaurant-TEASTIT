@@ -384,6 +384,11 @@ header {
   background-color: #e1b168;
   color: #292E36;
 }
+@media screen and (min-width: 992px) {
+  .hero-content {
+    text-align: left;
+  }
+}
 
 .hero-img {
   -webkit-margin-before: 2rem;

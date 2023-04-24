@@ -20,6 +20,7 @@
 
 .hero-content {
   text-align: center;
+
   h1 {
     margin-block: 1rem;
   }
@@ -37,6 +38,10 @@
       background-color: $yellow;
       color: $primary;
     }
+  }
+
+  @media screen and (min-width: 992px) {
+    text-align: left;
   }
 }
 
