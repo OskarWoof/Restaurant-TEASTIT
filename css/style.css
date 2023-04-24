@@ -1,3 +1,28 @@
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 5s linear infinite;
+          animation: rotating 5s linear infinite;
+}
+
 *,
 *::after,
 *::before {
@@ -81,8 +106,15 @@ p {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .row {
+    width: 1400px;
+    margin-inline: -4rem;
+  }
+}
+
 header {
-  background-color: #2a2f37;
+  background-color: #292E36;
 }
 
 .header-top {
@@ -135,12 +167,12 @@ header {
 }
 .btn.btn-transparent:hover {
   background-color: #e1b168;
-  color: #2a2f37;
+  color: #292E36;
 }
 
 .btn.btn-full {
   background-color: #e1b168;
-  color: #2a2f37;
+  color: #292E36;
 }
 .btn.btn-full:hover {
   background-color: transparent;
@@ -180,7 +212,7 @@ header {
 .navbar-toggler {
   display: block;
   background-color: #ffffff;
-  color: #2a2f37;
+  color: #292E36;
   padding: 2.2rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -317,6 +349,12 @@ header {
 }
 
 .hero {
-  background-color: #2a2f37;
+  background-color: #292E36;
   height: 100vh;
+}
+
+.hero {
+  -webkit-padding-before: 4rem;
+          padding-block-start: 4rem;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
