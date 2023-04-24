@@ -240,12 +240,10 @@ header {
   -webkit-padding-start: 1rem;
           padding-inline-start: 1rem;
   top: 100%;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   min-width: 28rem;
   font-size: 2rem;
 }
@@ -259,6 +257,8 @@ header {
   z-index: -100;
   border-end-start-radius: 0.8rem;
   border-end-end-radius: 0.8rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .mainNav a {
   display: block;
@@ -299,12 +299,23 @@ header {
   }
 }
 
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
 .sub-menu {
   -webkit-padding-start: 2rem;
           padding-inline-start: 2rem;
   position: relative;
   color: #ffffff;
   cursor: pointer;
+}
+.sub-menu .subNav {
+  display: none;
 }
 .sub-menu .pages-link {
   display: -webkit-box;
@@ -336,10 +347,6 @@ header {
     -webkit-padding-start: 1rem;
             padding-inline-start: 1rem;
   }
-}
-
-.subNav {
-  display: none;
 }
 
 .hero {
