@@ -47,11 +47,13 @@
 
 .hero-img {
   margin-block-start: 2rem;
+
   img {
     border: 3rem solid hsla(0, 0%, 100%, 0.1);
     border-top-left-radius: 62.8rem;
     border-top-right-radius: 62.8rem;
   }
+
   @media screen and (min-width: 992px) {
     margin-block-start: 0;
   }
