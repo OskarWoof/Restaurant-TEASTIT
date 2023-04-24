@@ -106,13 +106,6 @@ p {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .row {
-    width: 1400px;
-    margin-inline: -4rem;
-  }
-}
-
 header {
   background-color: #292E36;
 }
@@ -350,10 +343,6 @@ header {
 
 .hero {
   background-color: #292E36;
-  height: 100vh;
-}
-
-.hero {
   -webkit-padding-before: 4rem;
           padding-block-start: 4rem;
   display: block;
