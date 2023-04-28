@@ -1,5 +1,6 @@
 header {
   background-color: $primary;
+  padding-block-start: 0;
 }
 
 .header-top {
@@ -73,6 +74,14 @@ header {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primary;
+}
+
 // navbar-toggler
 .navbar-toggler {
   display: block;
@@ -109,27 +118,52 @@ header {
 // main nav
 .mainNav {
   display: none;
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    position: relative;
+    padding-inline-start: 0;
+    padding-block: 0.5rem;
+    top: 0;
+    background-color: transparent;
+
+    &::after {
+      content: none;
+    }
+
+    a {
+      padding: 2rem 3rem;
+      color: $white-100;
+      transition: $transition;
+
+      &:hover {
+        color: $yellow;
+      }
+
+      &.active {
+        color: $yellow;
+      }
+
+      &:first-child {
+        padding-inline-start: .1rem;
+      }
+    }
+  }
+}
+
+.mainNav.active {
+  display: block;
   position: absolute;
   padding-block: 1rem 2rem;
   padding-inline-start: 1rem;
   top: 100%;
-  transform: translateY(0%);
-  transition: all $transition;
+  left: 0;
   min-width: 28rem;
   font-size: 2rem;
-
-  &::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #555;
-    inset: 0;
-    z-index: -100;
-    border-end-start-radius: 0.8rem;
-    border-end-end-radius: 0.8rem;
-    transition: all $transition;
-  }
+  background-color: rgba(0, 0, 0, .96);
+  border-end-start-radius: 0.8rem;
+  border-end-end-radius: 0.8rem;
+  animation: fading .4s ease-in;
 
   a {
     display: block;
@@ -145,27 +179,10 @@ header {
       color: $yellow;
     }
   }
+}
 
-  @media screen and (min-width: 992px) {
-    display: flex;
-    position: relative;
-    padding-inline-start: 0;
-    padding-block: 0.5rem;
-    top: 0;
-    order: -1;
-
-    &::after {
-      content: none;
-    }
-
-    a {
-      padding: 2rem 3rem;
-
-      &:first-child {
-        padding-inline-start: .1rem;
-      }
-    }
-  }
+.open {
+  display: block;
 }
 
 .sub-menu {
@@ -173,7 +190,7 @@ header {
   position: relative;
   color: $white-100;
   cursor: pointer;
-  
+
   .subNav {
     display: none;
   }
