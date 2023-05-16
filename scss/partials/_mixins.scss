@@ -1,0 +1,47 @@
+.smol-css-grid {
+  // $min: 15ch;
+  // $gap: 1rem;
+  display: grid;
+  grid-gap: var(--gap);
+  /* min() with 100% prevents overflow
+  in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.smol-flexbox-grid {
+  // $min: 10ch;
+  // $gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.smol-flexbox-grid > * {
+  flex: 1 1 var(--min);
+}
+
+.smol-centering {
+  display: grid;
+  place-content: center;
+}
+
+@mixin smol-grid($min, $gap) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, $min)), 1fr);
+}
+
+@mixin smol-flex($min, $gap) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+
+  & > * {
+    flex: 1 1 $min;
+  }
+}
+
+@mixin grid-centering{
+  display: grid;
+  place-content: center;
+}
