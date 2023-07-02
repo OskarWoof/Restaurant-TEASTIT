@@ -2,6 +2,7 @@ header {
   background-color: $primary;
   padding-block-start: 0;
   position: relative;
+  padding-block-end: 84px;
 }
 
 .header-top {
@@ -34,7 +35,7 @@ header {
 
 .btn.btn-transparent {
   background-color: transparent;
-  color: $white-100;
+  color: $white;
 
   &:hover {
     background-color: $yellow;
@@ -48,7 +49,7 @@ header {
 
   &:hover {
     background-color: transparent;
-    color: $white-100;
+    color: $white;
   }
 }
 
@@ -67,25 +68,40 @@ header {
   background-color: $primary;
   position: absolute;
   width: 100%;
+  transition: top $transition;
+
+  /* Dodan prijelaz za top vrednost */
+  &.header-bottom--sticky {
+    position: fixed;
+    top: 0;
+    animation: fadeIn $transition;
+    /* Dodana animacija za prelaz */
+  }
 
   .container {
-    height: 74px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-block: 0.5rem;
   }
+}
 
-  &--sticky {
-    position: fixed;
-    top: 0;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 // navbar-toggler
 .navbar-toggler {
   display: block;
-  background-color: $white-100;
+  background-color: $white;
   color: $primary;
   padding: 2.2rem;
   font-size: 1.5rem;
@@ -100,7 +116,7 @@ header {
 // social icons
 .social-icons {
   a {
-    color: $white-100;
+    color: $white;
     font-size: 2.5rem;
     padding-inline: 0.8rem;
     transition: color $transition;
@@ -133,7 +149,7 @@ header {
 
     a {
       padding: 2rem 3rem;
-      color: $white-100;
+      color: $white;
       transition: $transition;
 
       &:hover {
@@ -168,7 +184,7 @@ header {
   a {
     display: block;
     padding: 1rem 2rem;
-    color: $white-100;
+    color: $white;
     transition: $transition;
 
     &:hover {
@@ -188,7 +204,7 @@ header {
 .sub-menu {
   padding-inline-start: 2rem;
   position: relative;
-  color: $white-100;
+  color: $white;
   cursor: pointer;
 
   .subNav {

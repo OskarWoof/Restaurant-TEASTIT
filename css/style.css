@@ -153,10 +153,12 @@ p {
 }
 
 header {
-  background-color: #292E36;
+  background-color: #292e36;
   -webkit-padding-before: 0;
           padding-block-start: 0;
   position: relative;
+  -webkit-padding-after: 84px;
+          padding-block-end: 84px;
 }
 
 .header-top {
@@ -208,12 +210,12 @@ header {
 }
 .btn.btn-transparent:hover {
   background-color: #e1b168;
-  color: #292E36;
+  color: #292e36;
 }
 
 .btn.btn-full {
   background-color: #e1b168;
-  color: #292E36;
+  color: #292e36;
 }
 .btn.btn-full:hover {
   background-color: transparent;
@@ -235,12 +237,21 @@ header {
           border-block-start: 1px solid #5c6168;
   -webkit-border-after: 1px solid #5c6168;
           border-block-end: 1px solid #5c6168;
-  background-color: #292E36;
+  background-color: #292e36;
   position: absolute;
   width: 100%;
+  -webkit-transition: top 0.4s ease;
+  transition: top 0.4s ease;
+  /* Dodan prijelaz za top vrednost */
+}
+.header-bottom.header-bottom--sticky {
+  position: fixed;
+  top: 0;
+  -webkit-animation: fadeIn 0.4s ease;
+          animation: fadeIn 0.4s ease;
+  /* Dodana animacija za prelaz */
 }
 .header-bottom .container {
-  height: 74px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,15 +263,36 @@ header {
           justify-content: space-between;
   padding-block: 0.5rem;
 }
-.header-bottom--sticky {
-  position: fixed;
-  top: 0;
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .navbar-toggler {
   display: block;
   background-color: #ffffff;
-  color: #292E36;
+  color: #292e36;
   padding: 2.2rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -400,7 +432,7 @@ header {
 }
 
 .hero {
-  background-color: #292E36;
+  background-color: #292e36;
   -webkit-padding-before: 4rem;
           padding-block-start: 4rem;
   display: block;
@@ -439,7 +471,7 @@ header {
 }
 .hero-content .btn-gold:hover {
   background-color: #e1b168;
-  color: #292E36;
+  color: #292e36;
 }
 @media screen and (min-width: 992px) {
   .hero-content {
@@ -533,7 +565,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #292E36;
+  background-color: #292e36;
   border-radius: 10rem;
 }
 .detail-content {
