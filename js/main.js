@@ -24,8 +24,8 @@ var headerBottom = document.querySelector(".header-bottom");
 
 // Get the offset position of the sticky element
 var stickyOffset = headerBottom.offsetTop;
-
-stickyOffset = 300;
+console.log();
+// stickyOffset = 300;
 
 // Function to handle the scroll event
 function handleScroll() {

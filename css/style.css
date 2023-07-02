@@ -156,10 +156,10 @@ header {
   background-color: #292E36;
   -webkit-padding-before: 0;
           padding-block-start: 0;
+  position: relative;
 }
 
 .header-top {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,9 +235,12 @@ header {
           border-block-start: 1px solid #5c6168;
   -webkit-border-after: 1px solid #5c6168;
           border-block-end: 1px solid #5c6168;
+  background-color: #292E36;
+  position: absolute;
+  width: 100%;
 }
 .header-bottom .container {
-  position: relative;
+  height: 74px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,13 +252,9 @@ header {
           justify-content: space-between;
   padding-block: 0.5rem;
 }
-
-.sticky {
+.header-bottom--sticky {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #292E36;
 }
 
 .navbar-toggler {
