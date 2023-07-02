@@ -201,42 +201,6 @@ header {
   }
 }
 
-.btn {
-  display: inline-block;
-  border: 2px solid #e1b168;
-  border-radius: 0;
-  text-align: center;
-  margin-block: 1rem;
-  padding: 1.8rem 5.5rem;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-  font-size: 2rem;
-  cursor: pointer;
-}
-@media screen and (max-width: 767px) {
-  .btn {
-    min-width: 25rem;
-  }
-}
-
-.btn.btn-transparent {
-  background-color: transparent;
-  color: #ffffff;
-}
-.btn.btn-transparent:hover {
-  background-color: #e1b168;
-  color: #292e36;
-}
-
-.btn.btn-full {
-  background-color: #e1b168;
-  color: #292e36;
-}
-.btn.btn-full:hover {
-  background-color: transparent;
-  color: #ffffff;
-}
-
 .brand {
   padding-block: 1rem;
 }
@@ -444,6 +408,49 @@ header {
     -webkit-padding-start: 1rem;
             padding-inline-start: 1rem;
   }
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid #e1b168;
+  border-radius: 0;
+  text-align: center;
+  margin-block: 1rem;
+  padding: 1.8rem 5.5rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .btn {
+    min-width: 25rem;
+  }
+}
+
+.btn.btn-transparent {
+  background-color: transparent;
+  color: #ffffff;
+}
+.btn.btn-transparent:hover {
+  background-color: #e1b168;
+  color: #292e36;
+}
+
+.btn.btn-full {
+  background-color: #e1b168;
+  color: #292e36;
+}
+.btn.btn-full:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.btn.btn-transparent.btn-gold {
+  color: #e1b168;
+}
+.btn.btn-transparent.btn-gold:hover {
+  color: #292e36;
 }
 
 .hero {
@@ -757,4 +764,51 @@ header {
 .about-us-sign-wrap .sign-image {
   -webkit-padding-before: 1rem;
           padding-block-start: 1rem;
+}
+
+.home-menu-section {
+  padding-block: 12rem 14rem;
+  background-color: #ffffff;
+}
+
+.home-menu-grid {
+  grid-column-gap: 5rem;
+  grid-row-gap: 1.6rem;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: auto;
+}
+
+.home-menu-title-wrap {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+
+.home-menu-title-area {
+  position: sticky;
+  left: 0%;
+  top: 4%;
+  right: 0%;
+  bottom: auto;
+  display: inline-block;
+}
+
+.section-title-wrap {
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
+}
+
+.section-title-wrap.section-title-left {
+  text-align: left;
+}
+
+.home-menu-image {
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
+}
+
+.home-menu-button-wrap {
+  -webkit-padding-before: 60px;
+          padding-block-start: 60px;
 }/*# sourceMappingURL=style.css.map */

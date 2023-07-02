@@ -1,0 +1,43 @@
+.home-menu-section {
+  padding-block: 12rem 14rem;
+  background-color: $white;
+}
+
+.home-menu-grid {
+  grid-column-gap: 5rem;
+  grid-row-gap: 1.6rem;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: auto;
+}
+
+.home-menu-title-wrap {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+
+.home-menu-title-area {
+  position: sticky;
+  left: 0%;
+  top: 4%;
+  right: 0%;
+  bottom: auto;
+  display: inline-block;
+}
+
+.section-title-wrap {
+  padding-block-end: 1rem;
+}
+
+.section-title-wrap.section-title-left {
+  text-align: left;
+}
+
+.home-menu-image {
+  margin-block-start: 30px;
+}
+
+.home-menu-button-wrap {
+  padding-block-start: 60px;
+}

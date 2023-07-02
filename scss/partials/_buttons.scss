@@ -1,0 +1,43 @@
+.btn {
+  display: inline-block;
+  border: 2px solid $yellow;
+  border-radius: 0;
+  text-align: center;
+  margin-block: 1rem;
+  padding: 1.8rem 5.5rem;
+  transition: $transition;
+  font-size: 2rem;
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    min-width: 25rem;
+  }
+}
+
+.btn.btn-transparent {
+  background-color: transparent;
+  color: $white;
+
+  &:hover {
+    background-color: $yellow;
+    color: $primary;
+  }
+}
+
+.btn.btn-full {
+  background-color: $yellow;
+  color: $primary;
+
+  &:hover {
+    background-color: transparent;
+    color: $white;
+  }
+}
+
+.btn.btn-transparent.btn-gold {
+  color: $yellow;
+
+  &:hover {
+    color: $primary;
+  }
+}
