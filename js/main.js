@@ -18,16 +18,26 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
-
 // promene stanja headera
-$(document).on("scroll", function () {
-  if ($(window).scrollTop() >= 130) {
-    $(".header-bottom").addClass("header-bottom--sticky");
+document.addEventListener("scroll", function () {
+  if (window.pageYOffset >= 170) {
+    var headerBottom = document.querySelector(".header-bottom");
+    headerBottom.classList.add("header-bottom--sticky");
   } else {
-    $(".header-bottom").removeClass("header-bottom--sticky");
+    var headerBottom = document.querySelector(".header-bottom");
+    headerBottom.classList.remove("header-bottom--sticky");
   }
 });
 
+// swiper
+const swiper = new Swiper(".testSwiper", {
+  //Optional parametars
+  loop: true,
+  slidesPerView: 3,
 
-
+  //If we nedd pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
