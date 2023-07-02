@@ -116,7 +116,7 @@ h1 {
   font-size: calc(4rem + (1vw - 0.32rem) * 3.75);
   min-height: 0vw;
   line-height: 1.1;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.01em;
   font-weight: 700;
 }
 @media (min-width: 1400px) {
@@ -605,5 +605,16 @@ header {
 @media (min-width: 1400px) {
   .detail-content p {
     font-size: 2rem;
+  }
+}
+
+.story {
+  padding-block: 2rem 4rem;
+  background-color: #fff8f5;
+}
+
+@media screen and (max-width: 991px) {
+  .story-grid {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

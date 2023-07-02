@@ -45,7 +45,7 @@ h1 {
   font-size: calc(4rem + ((1vw - 0.32rem) * 3.75));
   min-height: 0vw;
   line-height: 1.1;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.01em;
   font-weight: 700;
 
   @media (min-width: 1400px) {

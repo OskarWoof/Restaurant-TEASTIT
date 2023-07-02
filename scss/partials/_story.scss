@@ -1,0 +1,10 @@
+.story {
+  padding-block: 2rem 4rem;
+  background-color: $light-gray-bg;
+}
+
+@media screen and (max-width: 991px) {
+  .story-grid {
+    display: block;
+  }
+}
