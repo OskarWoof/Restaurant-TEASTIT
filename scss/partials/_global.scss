@@ -77,3 +77,8 @@ p {
     padding-inline: 4rem;
   }
 }
+
+.w-layout-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+}

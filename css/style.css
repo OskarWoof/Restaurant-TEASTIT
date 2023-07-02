@@ -152,6 +152,11 @@ p {
   }
 }
 
+.w-layout-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+
 header {
   background-color: #292e36;
   -webkit-padding-before: 0;
@@ -484,7 +489,9 @@ header {
           margin-block-start: 2rem;
 }
 .hero-img img {
-  border: 3rem solid hsla(0, 0%, 100%, 0.1);
+  border-style: solid solid none;
+  border-width: 30px;
+  border-color: hsla(0, 0%, 100%, 0.1);
   border-top-left-radius: 62.8rem;
   border-top-right-radius: 62.8rem;
 }
