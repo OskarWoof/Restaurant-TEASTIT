@@ -1,0 +1,56 @@
+.service-section {
+  padding-block: 14rem;
+  background-color: $primary;
+}
+
+.service-grid {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-rows: auto;
+}
+
+.service-title-wrap {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+  padding-inline-end: 6rem;
+}
+
+.section-title-wrap {
+  padding-block-end: 1rem;
+}
+
+.section-title-wrap.section-title-left {
+  text-align: left;
+}
+
+.service-item {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+  align-self: center;
+}
+
+.service-item-wrap {
+  padding: 4.5rem 3rem 3rem;
+  border: 20px solid $secondary;
+  text-align: center;
+
+  @media screen and (min-width: 1920px) {
+    padding-inline: 2.5rem;
+  }
+}
+
+.service-icon {
+  min-height: 6rem;
+  min-width: 6rem;
+  margin: 0 auto;
+}
+
+.service-item-title {
+  color: $white;
+  font-size: 2.5rem;
+  margin-block: 1.5rem 1rem;
+}
