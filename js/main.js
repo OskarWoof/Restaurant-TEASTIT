@@ -34,10 +34,21 @@ const swiper = new Swiper(".testSwiper", {
   //Optional parametars
   loop: true,
   slidesPerView: 3,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+  },
 
   //If we nedd pagination
   pagination: {
     el: ".swiper-pagination",
+    // dynamicBullets: true,
     clickable: true,
   },
 });

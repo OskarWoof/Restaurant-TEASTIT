@@ -1,0 +1,132 @@
+.special-dishes {
+  padding-block: 14rem 6rem;
+}
+
+.section-title-wrap {
+  padding-block-end: 1rem;
+  text-align: center;
+}
+
+.section-title {
+  text-transform: capitalize;
+}
+
+.special-dish-content-wrap {
+  margin-top: 20px;
+}
+
+.special-dish-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 1.6rem;
+  grid-template-rows: auto;
+}
+
+.special-dish-item {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+
+.sd-flex {
+  display: flex;
+  padding: 4rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("/images/special-dish-bg-1.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dish-left-wrap {
+  width: 60%;
+  margin-block-end: 0;
+}
+
+.only-rate-wrap {
+  display: inline-block;
+  min-width: 14rem;
+  min-height: 14rem;
+  margin: 1rem 1rem 3rem 0px;
+  padding: 3.3rem 2.5rem 0rem 3rem;
+  background-image: url("/images/offer-bg-1.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(-16deg);
+}
+
+.offer-rate-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // transform: rotate(-10deg);
+}
+
+.offer-only-title {
+  margin-bottom: 0;
+  color: $primary;
+  font-size: 1.5rem;
+  line-height: 0.7;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.offer-price-value {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 1rem;
+  font-size: 6rem;
+  line-height: 1.1;
+  color: $primary;
+}
+
+.dish-offer-wrap {
+  display: inline-block;
+  border-block: 1px solid $primary;
+}
+
+.going-offer-title {
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-top: .5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: $primary;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.offer-dish-item-name {
+  margin-block: .5rem 0;
+  font-size: 4rem;
+  letter-spacing: 0.01em;
+}
+
+.special-dish-item.dish-item-two {
+  background-image: url("/images/special-dish-bg-2.jpg");
+}
+
+.only-rate-wrap.pizza-offer {
+  background-image: url("/images/offer-bg-2.svg");
+}
+
+.offer-only-title.offer-white-text {
+  color: $white;
+}
+
+.offer-price-value {
+  margin-block: 0;
+  padding-block-end: 1rem;
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+.offer-price-value.white-color {
+  color: $white;
+}

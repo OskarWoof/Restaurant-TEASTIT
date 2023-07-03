@@ -1,0 +1,36 @@
+.popular-dish-section {
+  padding-block: 6rem 14rem;
+}
+
+.popular-dish-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-block: 3rem 2rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  grid-template-rows: auto;
+}
+
+.popular-dish-item {
+  margin-block-end: 4rem;
+}
+
+.popular-dish-price-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.popular-dish-name,
+.popular-dish-price {
+  margin-block: 1rem;
+  font-size: 3rem;
+  color: $primary;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.dish-button-wrap {
+  text-align: center;
+}
