@@ -58,7 +58,35 @@
   border-block: 1px solid $yellow;
 }
 
+.blog-category,
+.blog-date {
+  margin-block-end: 0;
+  padding-block-start: 0.6rem;
+  color: $primary;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
 .b-inline-block {
   max-width: 100%;
   display: inline-block;
+}
+
+.blog-date-wrap {
+  margin-inline-start: 3rem;
+  border-block: 1px solid $yellow;
+}
+
+.blog-title {
+  display: inline-block;
+  margin-block-start: 0.5rem;
+  margin-block-end: 2rem;
+  color: $primary;
+  font-size: 3rem;
+  line-height: 1.3;
+  text-transform: capitalize;
+  font-family: $header-ff;
+  font-weight: 700;
 }

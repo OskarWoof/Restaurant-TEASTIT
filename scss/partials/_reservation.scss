@@ -1,0 +1,96 @@
+.success-message,
+.error-message {
+  display: none;
+}
+
+.reservation-section {
+  padding: 14rem;
+  background-image: url('/images/reservation-bg.jpg');
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.reservation-wrap {
+  margin-inline: 8rem;
+  padding: 14rem;
+  text-align: center;
+  background-color: rgba(41, 46, 54, 0.95);
+}
+
+.reservation-block {
+  margin-block: 2rem 1.5rem;
+}
+
+.form-input-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-field.half-width {
+  width: 48%;
+  margin-block-end: 3rem;
+}
+
+.input-field.quarter-width {
+  width: 31%;
+}
+
+.input-field {
+  min-height: 7rem;
+  padding-left: 2rem;
+  border: 1px solid #858585;
+  background-color: transparent;
+  font-family: $body-ff;
+  color: $white;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.w-input {
+  display: block;
+  height: 3.8rem;
+  padding: 0.8rem 1.2rem;
+  line-height: 1.42857143;
+}
+
+.w-input:focus,
+.w-select:focus {
+  border-color: #3898EC;
+  outline: 0;
+}
+
+.w-button {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border: 0;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.submit-button {
+  min-height: 6.8rem;
+  padding-inline-start: 5.5rem;
+  padding-inline-end: 5.5rem;
+  margin-block-start: 3rem;
+  background-color: $white;
+  transition: background-color 200ms ease, color 200ms ease;
+  color: $primary;
+  font-family: $body-ff;
+  font-size: 2.2rem;
+  font-weight: 500;
+
+  &:hover {
+      background-color: $yellow;
+      color: $white;
+    }
+}
+
+// ::placeholder{
+//   opacity: 1;
+//}
