@@ -1,6 +1,6 @@
 // mobile menu
 const toggler = document.querySelector(".navbar-toggler");
-const navMenu = document.querySelector(".mainNav");
+const navMenu = document.querySelector(".nav-menu");
 
 toggler.addEventListener("click", () => {
   navMenu.classList.toggle("active");
@@ -8,10 +8,10 @@ toggler.addEventListener("click", () => {
 
 document.addEventListener("click", function (event) {
   if (
-    !event.target.closest(".mainNav") &&
+    !event.target.closest(".nav-menu") &&
     !event.target.closest(".navbar-toggler")
   ) {
-    var navMenu = document.querySelector(".mainNav");
+    var navMenu = document.querySelector(".nav-menu");
     if (navMenu.classList.contains("active")) {
       navMenu.classList.remove("active");
     }

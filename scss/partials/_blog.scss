@@ -9,6 +9,10 @@
 .blog-grid {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem;
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .blog-item {
